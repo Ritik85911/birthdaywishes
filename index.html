@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+font-family:sans-serif;
+background:linear-gradient(45deg,#ff758c,#ff7eb3,#7afcff,#feff9c);
+background-size:400% 400%;
+animation:bg 10s infinite alternate;
+color:white;
+text-align:center;
+}
+
+@keyframes bg{
+0%{background-position:0%}
+100%{background-position:100%}
+}
+
+h1{
+font-size:32px;
+padding:20px;
+}
+
+button{
+
+padding:15px 30px;
+font-size:20px;
+border:none;
+border-radius:40px;
+background:white;
+color:#ff4b5c;
+font-weight:bold;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+transform:scale(1.1);
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>🎁 A Special Birthday Surprise 🎁</h1>
+
+<button onclick="magic()">✨ Click Here For Magic ✨</button>
+
+<script>
+
+function magic(){
+
+document.body.style.background="black";
+
+setTimeout(()=>{
+window.location.href="celebration.html";
+},1200)
+
+}
+
+</script>
+
+</body>
+</html>
